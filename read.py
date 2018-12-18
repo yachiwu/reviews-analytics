@@ -32,3 +32,12 @@ for d in data:
 		good.append(d)
 print('一共有',len(good),'筆留言提到good')		
 print(good[0])		
+
+###清單快寫法
+#留言中有提到bad的
+bad = [ d for d in data if 'bad' in d]
+print(bad[1])
+print('一共有',len(bad),'筆留言提到bad')
+#全部留言中是否提到look
+look = [ 'look' in d for d in data] 
+print(look[0])
